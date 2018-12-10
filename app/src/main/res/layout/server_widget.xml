@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/widget_margin"
+              tools:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/widget_back"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:clickable="true"
+            android:contentDescription="Start just share"
+            android:focusable="true"
+            android:src="@drawable/start"/>
+
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:clickable="true"
+            android:contentDescription="Stop Just Share"
+            android:focusable="true"
+            android:src="@drawable/stop"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/server_desc"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="http://0.0.0.0:8000"/>
+
+            <TextView
+                android:id="@+id/share_desc"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="4 files selected"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/select_files"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:contentDescription="Select Files"
+            android:focusable="true"
+            android:src="@drawable/ic_attach_file_grey_600_24dp"/>
+    </LinearLayout>
+</LinearLayout>
