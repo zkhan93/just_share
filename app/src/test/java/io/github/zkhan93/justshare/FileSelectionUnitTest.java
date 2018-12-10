@@ -43,7 +43,7 @@ public class FileSelectionUnitTest {
 
     @Test
     public void parseSelectedFileResult(){
-        Intent intent = new Intent()
-        activity.onActivityResult(activity.SELECT_FILES_REQUEST_CODE, Activity.RESULT_CANCELED, null);
+        Intent intent = new Intent();
+        activity.onActivityResult(1002, Activity.RESULT_CANCELED, null);
     }
 }
