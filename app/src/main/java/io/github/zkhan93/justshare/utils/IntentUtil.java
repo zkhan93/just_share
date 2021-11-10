@@ -3,7 +3,7 @@ package io.github.zkhan93.justshare.utils;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import io.github.zkhan93.justshare.service.HttpService;
 

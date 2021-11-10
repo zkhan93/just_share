@@ -1,7 +1,7 @@
 package io.github.zkhan93.justshare.utils;
 
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.HashMap;
